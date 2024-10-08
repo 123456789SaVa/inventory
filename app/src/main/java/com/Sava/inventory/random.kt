@@ -72,13 +72,6 @@ fun RandomScreen() {
     }
 }
 
-fun Column(
-    modifier: Modifier,
-    horizontalAlignment: Alignment,
-    content: @Composable() (ColumnScope.() -> Unit)
-) {
-    TODO("Not yet implemented")
-}
 
 
 fun generateRandomNumber(min: Int, max: Int): Int {
