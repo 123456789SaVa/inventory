@@ -75,3 +75,4 @@ fun ListScreen() {
 }
 
 val LIST_SCREEN = "List Screen"
+const val TEST="test"
