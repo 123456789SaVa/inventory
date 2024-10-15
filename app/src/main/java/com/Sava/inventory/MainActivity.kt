@@ -7,14 +7,11 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             Column {
-
-
                 Row {
                     Text("1")
                     Text("2")
@@ -23,9 +20,8 @@ class MainActivity : ComponentActivity() {
                 Row {
                     Text("4")
                     Text("5")
-                    Text("6")
+                    Text("52")
                 }
-
                 Text("Привет")
                 Text("я")
                 Text("профессионал")
