@@ -35,47 +35,21 @@ fun InventoryApp() {
         })
         { padding ->
             val navController = rememberNavController()
-
-
-
-
             NavHost(
                 navController = navController,
                 startDestination = INVENTORY_SCREEN,
                 modifier = Modifier.padding(padding)
             ) {
-
-                composable(INVENTORY_SCREEN) { CityScreen(navController) }
+                composable(INVENTORY_SCREEN) { InventoryScreen(navController) }
                 composable(ADD_ITEM_SCREEN) { AddItemScreen(navController) }
                 composable(EDIT_ITEM_SCREEN) { EditItemScreen(navController) }
                 composable(ITEM_DETAILS_SCREEN) { ItemDetailsScreen(navController) }
             }
         }
-    }
+    }//test
 }
 @Composable
 fun AddItemScreen(navController: NavHostController) {
-    var name by rememberSaveable { mutableStateOf("") }
-    var surname by rememberSaveable { mutableStateOf("") }
-    var result by rememberSaveable { mutableStateOf("") }
-
-    Column {
-        TextField(value = name, onValueChange = {
-            name = it
-        })
-
-        TextField(value = surname, onValueChange = {
-            surname = it
-        })
-
-        Button(onClick = {
-            result = "$name $surname"
-        }) {
-            Text(text = "Анука что там будет")
-        }
-
-        Text(text = result, fontSize = 50.sp)
-    }
 }
 
 @Composable
@@ -99,4 +73,4 @@ val INVENTORY_SCREEN = "Inventory"
 val ADD_ITEM_SCREEN = "Add Item"
 val EDIT_ITEM_SCREEN = "Edit Item"
 val ITEM_DETAILS_SCREEN = "Item Details"
-тиьмтд
+///tests
