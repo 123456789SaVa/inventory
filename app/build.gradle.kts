@@ -53,6 +53,13 @@ android {
 dependencies {
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.monitor)
+    implementation(libs.androidx.junit.ktx)
+    testImplementation(libs.junit)
+    testImplementation(libs.junit)
+    testImplementation(libs.testng)
+    androidTestImplementation(libs.testng)
+    androidTestImplementation(libs.testng)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.compiler)
     implementation(libs.androidx.navigation.compose)
