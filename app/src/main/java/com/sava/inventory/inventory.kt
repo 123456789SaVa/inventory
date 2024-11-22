@@ -1,4 +1,4 @@
-package com.Sava.inventory
+package com.sava.inventory
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -91,6 +91,11 @@ fun ItemDetailsScreen(navController: NavHostController) {
 
 @Composable
 fun InventoryScreen(navController: NavHostController) {
+}
+
+
+@Composable
+fun GuessScreen(navController: NavHostController) {
 }
 
 

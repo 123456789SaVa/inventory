@@ -1,4 +1,4 @@
-package com.Sava.inventory
+package com.sava.inventory
 
 import org.junit.Test
 

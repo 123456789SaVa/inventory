@@ -1,10 +1,9 @@
-package com.Sava.inventory
+package com.sava.inventory
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
@@ -21,15 +20,10 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.input.key.Key.Companion.R
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.navigation.NavController
-
-
 
 @Composable
 fun SvetoforScreen() {
@@ -66,7 +60,7 @@ fun SvetoforScreen() {
             colors = buttonColors(if (kolir == "green") Color.Green else Color.Gray),
             onClick = { kolir = "green" }) { }
         Image(
-            painter = painterResource(com.Sava.inventory.R.drawable.lion),
+            painter = painterResource(R.drawable.lion),
             contentDescription = null,
             modifier = Modifier
                 .size(250.dp)

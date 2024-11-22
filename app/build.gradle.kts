@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.Sava.inventory"
+    namespace = "com.sava.inventory"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.Sava.inventory"
+        applicationId = "com.sava.inventory"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
